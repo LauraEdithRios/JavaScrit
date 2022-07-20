@@ -1,0 +1,243 @@
+
+/*tipografia**/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Yellowtail&display=swap');
+
+/*colores
+#BDF2D5
+#4B5D67
+
+fuentes
+font-family: 'Yellowtail', cursive;
+font-family: 'Cairo', sans-serif;
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header{
+    background-color: #BDF2D5;
+    padding: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+}
+
+main{
+    padding: 3px;
+    margin: 5px;
+}
+
+img{
+    border-radius: 1cm ;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+display: inline-block;
+color: antiquewhite;
+}
+
+h1{
+    background-color: #4B5D67;
+    font-family: 'Yellowtail', cursive;
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center;
+
+}
+h2{
+    padding: 1em;
+}
+
+body{
+    background-color: #3C2C3E;
+    color: cornsilk;
+    font-family: 'Cairo', sans-serif;
+}
+
+.grillaNovedades{
+    padding: 10px;
+    margin: 10px;
+}
+
+.introduccionIndex{
+    padding: 15px;
+    margin: 15px;
+
+}
+
+.main-footer{
+    padding: 30px;
+    margin: 50px;
+    text-align: center;
+}
+
+.parrafo{
+    padding: 10px;
+    margin: 10px;
+}
+
+.imagCentrado{
+    text-align: center;
+}
+
+form{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/*DECLARACION DE AREAS*/
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: introduccion;
+}
+
+.grillaNovedades{
+    grid-area: novedades;
+}
+
+.main-footer{
+    grid-area: footer;
+}
+
+/*DISTRIBUCION DE LAS AREAS*/
+
+.grillaGeneral{
+
+    background-color: #4B5D67;
+    margin: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header"
+    "introduccion"
+    "novedades" 
+    "footer"
+    ;
+}
+
+.grillaNovedades{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+/*BREAK POINT = 500!!!!!!!!!!!!!!!!!!*/
+@media (min-width:500px){
+    .grillaGeneral{
+        margin: 0;
+        grid-template-areas: 
+        "header header"
+        "introduccion introduccion"
+        "novedades novedades" 
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+
+    }
+
+    .grillaNovedades{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        border: 3px solid black;
+    }
+
+    .main-footer{
+        padding:0 px;
+    }
+}
+/*BREAK POINT = 768!!!!!!!!!!!!!!!!!!*/
+@media (min-width:768px){
+
+    .grillaGeneral{
+        background-color: #610C63 ;
+        grid-template-areas: 
+        "header header header"
+        "introduccion introduccion introduccion"
+        "novedades novedades novedades" 
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .grillaNovedades{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    h1{
+        background-color:#EE81B3 ;
+    }
+
+    header{
+        background-color: #FFF9D7;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        background-color: #FFF9D7;
+    }
+
+    li a {
+        color: #4B5D67;
+    }
+    .main-footer{
+        margin-top: 2em;
+    }
+}
+
+/*BREAK POINT = 1024!!!!!!!!!!!!!!!!!!*/
+@media (min-width:1024px){
+
+    .grillaGeneral{
+        background-color: #361500;
+        
+    }
+
+    .grillaNovedades{
+        font-size: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .panel{
+        font-size: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .introduccionIndex {
+        padding: 1em;
+        font-size: 1.5em;
+
+    }
+    body{
+        margin: 10%;
+        background-color: #603601;
+    }
+
+    h1{
+        background-color: #CC9544;
+    }
+}
+

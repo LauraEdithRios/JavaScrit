@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./marieCurie.html">Marie Curie</a>
+                </li>
+                <li>
+                    <a href="./proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="./donacion.html">Donacion</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Contactanos</h1>
+        <div class="parrafo">
+            <h2>Ingresa tus datos para que podamos contactarnos con vos.</h2>
+            <h3>* Campos obligatorios</h3>
+        </div>
+    </main>
+
+    <form>
+
+        <label for="apellido">Ingrese Apellido*: </label>
+        <input type="text" name="apellido" />
+        <br>
+        <label for="nombre">Ingrese Nombre*: </label>
+        <input type="text" name="nombre" />
+        <br>
+        <label for="telefono">Ingrese Telefono: </label>
+        <input type="text" name="telefono" />
+        <br>
+        <label for="ciudad">Ingrese Ciudad: </label>
+        <input type="text" name="ciudad" />
+        <br>
+        <label for="pais">Ingrese Pais: </label>
+        <select name="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Peru">Peru</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="EstadosUnidos">Estados Unidos</option>
+            <option value="ReinoUnido">Reino Unido</option>
+
+        </select>
+        <br>
+        <label for="email">Ingrese E-mail*: </label>
+        <input type="text" name="email" />
+        <br>
+        <textarea type="text" name="mensaje"></textarea>
+        <br>
+
+        <input type="submit" value="Enviar Mensaje" />
+        <input type="reset" value="Borrar Mensaje" />
+
+    </form>
+
+    <footer>
+        <h4>Copyright © 1997-2022 Fundacion Marie Curie. Todos los derechos reservados. </h4>
+    </footer>
+
+</body>
+
+</html>
