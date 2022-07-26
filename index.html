@@ -6,97 +6,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundacion Marie Curie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="grillaGeneral">
+        <!--ENCABEZADOO-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light fondoNav">
+                <div class="container-fluid">
+                    <a class="navbar-brand fuenteCairo fs-1" href="#">Fundacion Marie Curie</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav fs-4 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./sections/marieCurie.html">MarieCurie</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./sections/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./sections/donacion.html"> Donacion</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <!-- FIN ENCABEZADOO-->
+
+        <!-- INTRODUCCION-->
+        <main>
+            <section class="container p-5 ">
+                <div class="introduccionIndex">
+                    <h1 class="fw-bold text-center p-2">
+                        Tecnologia e Inovacion contra el cancer
+                    </h1>
+
+                    <div class="row">
+                        <!--
+                    lg---992px
+                    md---768px
+                    sm---576px
+                -->
+
+                        <div class="col-lg-6 col-md-4 col-sm-2">
+
+                            <p>
+                                Fundación Marie Curie es una asociación civil sin fines de lucro, fundada en el año 1988
+                                por los
+                                directivos del Instituto Privado de Radioterapia (IPR) de Córdoba, República Argentina.
+                                Sus fines son la promoción de la Docencia e Investigación en Radioterapia Oncológica,
+                                Oncología Clínica,
+                                y
+                                otras áreas relacionadas a Ciencias de la Salud.
+                                Con este objetivo, desde su fundación hasta la fecha ha desarrollado una importante
+                                tarea continua
+                                mediante
+                                organización de cursos, jornadas, congresos, publicaciones en revistas científicas
+                                nacionales e
+                                internacionales y actividades de posgrado.
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-10">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active " data-bs-interval="6000">
+                                        <img src="./images/MarieCurie.jpg" class="d-block w-100" alt="rayos">
+                                    </div>
+                                    <div class="carousel-item " data-bs-interval="2000">
+                                        <img src="./images/marieCurie2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item " data-bs-interval="2000">
+                                        <img src="./images/petit_parisien.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
 
 
-     <!--ENCABEZADOO-->   
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./sections/marieCurie.html">Marie Curie</a>
-                </li>
-                <li>
-                    <a href="./sections/proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./sections/donacion.html">Donacion</a>
-                </li>
-                <li>
-                    <a href="./sections/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <!-- FIN ENCABEZADOO-->   
-
-<!-- INTRODUCCION-->
-    <main>
-        <section class="principal">
-        <h1>
-            Fundación Marie Curie
-        </h1>
-        <div class="introduccionIndex">
-            <h2>
-                Tecnologia e Inovacion contra el cancer.
-            </h2>
-            <p>
-                Fundación Marie Curie es una asociación civil sin fines de lucro, fundada en el año 1988 por los
-                directivos del Instituto Privado de Radioterapia (IPR) de Córdoba, República Argentina.
-                Sus fines son la promoción de la Docencia e Investigación en Radioterapia Oncológica, Oncología Clínica,
-                y
-                otras áreas relacionadas a Ciencias de la Salud.
-                Con este objetivo, desde su fundación hasta la fecha ha desarrollado una importante tarea continua
-                mediante
-                organización de cursos, jornadas, congresos, publicaciones en revistas científicas nacionales e
-                internacionales y actividades de posgrado.
-                Centro Formador de Especialistas en Radioterapia Oncológica y Oncología Clínica: La Fundación Marie
-                Curie
-                tiene diferentes Convenios con Universidades estatales y privadas.
-            </p>
-        </div>
-    </section>
-    <!-- ANIMACION INTRO-->
-
-        <section class="containerAnimacion">
-            <div class="animacion1">
-                <img src="images/ladyMarieCurie.jpg" alt="Lady Marie Curie">
-            </div>
-
-        </section>
-    <!-- FIN ANIMACION INTRO-->
-
-    </main>
+            </section>
+        </main>
+    </div>
     <!-- FIN INTRODUCCION-->
 
     <!-- GALERIA DE NOVEDADES-->
-    <section class="grillaNovedades">
-        <h2>Novedades</h2>
-        <h3>2º Webinar Internacional para dosimetristas en Radioterapia</h3>
-        <picture>
-            <source media="(min-width:500px )" srcset="images/2_webinar_dosimetristas-500px.jpg">
-            <source media="(min-width:768px )" srcset="images/2_webinar_dosimetristas-768px.jpg">
-            <source media="(min-width:1024px )" srcset="images/2_webinar_dosimetristas-1024px.jpg">
-            <img src="./images/2_webinar_dosimetristas.jpg" alt="2º Webinar Internacional en Radioterapia">
-        </picture>
-        
+    <section class=" grillaNovedades">
+        <div class="container p-5">
+            <section class="row justify-content-center">
+                <h2 class="fw-bold text-center p-4">Novedades </h2>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="./images/2_webinar_dosimetristas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2º Webinar Internacional para dosimetristas en Radioterapia</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./sections/proyectos.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="./images/2_webinar_dosimetristas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2º Webinar Internacional para dosimetristas en Radioterapia</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./sections/proyectos.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="./images/2_webinar_dosimetristas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2º Webinar Internacional para dosimetristas en Radioterapia</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="./sections/proyectos.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </section>
     <!-- FIN DE GALERIA DE NOVEDADES-->
 
 
     <footer class="main-footer">
-        <h4>Copyright © 1997-2022 Fundacion Marie Curie. Todos los derechos reservados. </h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4>Copyright © 1997-2022 Fundacion Marie Curie. Todos los derechos reservados. </h4>
+                </div>
+            </div>
+        </div>
     </footer>
 
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    </div>
 </body>
 
 </html>
