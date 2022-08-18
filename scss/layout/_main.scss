@@ -1,0 +1,20 @@
+@import "../general/mixins";
+
+main{
+    background-color: #CA4E79;
+    font-size: 1.5em;
+}
+
+.mainMarieCurie{
+
+    background: url(../images/libro.jpg) no-repeat center ;
+  	height: 100%;
+    background-size:cover;                      /* <------ */
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.main-footer{
+    @include medidasFooter;
+}
+

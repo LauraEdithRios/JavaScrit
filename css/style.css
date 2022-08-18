@@ -6,13 +6,30 @@
 }
 
 /*tipografia**/
-.fondoNav {
-  background-color: #FFC18E;
-}
-.fondoNav .colorNav {
-  background-color: #FFC18E;
+main {
+  background-color: #CA4E79;
+  font-size: 1.5em;
 }
 
+.mainMarieCurie {
+  background: url(../images/libro.jpg) no-repeat center;
+  height: 100%;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-footer {
+  padding: 25px 0;
+  background-color: #513252;
+  color: beige;
+  width: 100%;
+  text-align: center;
+}
+
+.fondoNav, .fondoNav .colorNav {
+  background-color: #FFC18E;
+}
 header {
   background-color: #CA4E79;
 }
@@ -30,27 +47,8 @@ h2 {
   font-size: 3rem;
 }
 
-main {
-  background-color: #CA4E79;
-  font-size: 1.5em;
-}
-
 .grillaNovedades {
-  background-color: #7A4069;
-}
-
-.main-footer {
-  padding: 25px 0;
-  background-color: #513252;
-  color: beige;
-}
-
-.mainMarieCurie {
-  background: url(../images/libro.jpg) no-repeat center;
-  height: 100%;
-  background-size: cover; /* <------ */
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color: #dd1ea4;
 }
 
 .fondoCard {
