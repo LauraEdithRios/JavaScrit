@@ -1,8 +1,12 @@
 @import "../general/mixins";
 
 main{
-    background-color: #CA4E79;
+    background-color: $color_main;
     font-size: 1.5em;
+}
+
+.mainTituloIndex{
+    background-color: $color_main_titulo;
 }
 
 .mainMarieCurie{
