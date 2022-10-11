@@ -34,6 +34,7 @@ let user, pass, btnIniciar;
 
 function validadUsuario() {
 
+    let validacion = false;
     user = document.getElementById("usuarioInput").value;
     pass = document.getElementById("passwordInput").value;
 
@@ -43,13 +44,27 @@ function validadUsuario() {
     indice >= 0 ? (
         u1 = usuarios[indice],
         u1.password == pass ? (
-            alert("Ingreso exitoso"),
-            window.location.href = "login.html") :
-        (alert("Password incorrecto, intente nuevamente."))
+            window.location.href = "login.html", 
+            validacion = true )
+            :
+        msjError("Password incorrecto, intente nuevamente.")
     ) : (
-        alert("Usuario Incorrecto, intente nuevamente.."))
+        msjError("Usuario Incorrecto, intente nuevamente..")
+        )
 
     //usuario y pass correctos, los guardo en el localStorage
+    if(validacion == true){
     localStorage.setItem("usuario", user);
     localStorage.setItem("password", pass);
+    }
+}
+
+
+function msjError(msj)
+{
+    Swal.fire({
+        title: 'Error!',
+        text: msj,
+        icon: 'error',
+    })
 }
