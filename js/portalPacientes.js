@@ -1,4 +1,3 @@
-
 //array con todos los usuarios
 const usuarios = [{
         nombre: "Laura",
@@ -11,28 +10,27 @@ const usuarios = [{
 ]
 
 let validacion = false;
-let user, pass;
+let user, pass, btnIniciar;
 
-
-if (localStorage.length == 0) // ingresa por primera vez
-{
-    let btnIniciar = document.getElementById("btnIniciar"); //capturo el BOTON iniciar!!!!
+// ingresa por primera vez, OPTIMIZANDO CODIGOOO
+(localStorage.length == 0) ? 
+(
+    btnIniciar = document.getElementById("btnIniciar"), //capturo el BOTON iniciar!!!!
     btnIniciar.addEventListener("click", (e) => {
         e.preventDefault(); //para que no  me recargue la pagina
         validadUsuario();
-    });
-   
-} else {
-    document.getElementById("usuarioInput").value = localStorage.getItem("usuario");
-    document.getElementById("passwordInput").value = localStorage.getItem("password");
-    
-    let btnIniciar = document.getElementById("btnIniciar"); //capturo el BOTON iniciar!!!!
+    })
+
+ ) : (
+    document.getElementById("usuarioInput").value = localStorage.getItem("usuario"),
+    document.getElementById("passwordInput").value = localStorage.getItem("password"),
+
+     btnIniciar = document.getElementById("btnIniciar"), //capturo el BOTON iniciar!!!!
     btnIniciar.addEventListener("click", (e) => {
         e.preventDefault(); //para que no  me recargue la pagina
         window.location.href = "login.html"
-    });
-    
-}
+    })
+ )
 
 function validadUsuario() {
 
@@ -41,21 +39,17 @@ function validadUsuario() {
 
     let indice = usuarios.findIndex(element => element.nombre === user);
 
-    if (indice >= 0) {
-        u1 = usuarios[indice];
-        if (u1.password == pass) {
-            alert("Ingreso exitoso")
-            window.location.href = "login.html"
-        } else {
-            alert("Password incorrecto, intente nuevamente.")
-            return
-        }
-    } else {
-        alert("Usuario Incorrecto, intente nuevamente..")
-        return
-    }
+    //OPTIMIZANDO CODIGO
+    indice >= 0 ? (
+        u1 = usuarios[indice],
+        u1.password == pass ? (
+            alert("Ingreso exitoso"),
+            window.location.href = "login.html") :
+        (alert("Password incorrecto, intente nuevamente."))
+    ) : (
+        alert("Usuario Incorrecto, intente nuevamente.."))
+
     //usuario y pass correctos, los guardo en el localStorage
     localStorage.setItem("usuario", user);
     localStorage.setItem("password", pass);
 }
-
