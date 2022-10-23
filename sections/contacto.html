@@ -60,35 +60,43 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="formularioContacto col-lg-6 col-md-4 col-sm-10 ">
-          <form class="row g-3">
-            <div class="col-md-3">
-              <label for="validationDefault01" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombreInput" required>
+          <form class="row g-3" id="form">
+            <div class="col-md-3 field">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombreInput" name="name" required>
             </div>
-            <div class="col-md-3">
-              <label for="validationDefault02" class="form-label">Apellido</label>
+            <div class="col-md-3 field">
+              <label for="apellido" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="apellidoInput" required>
             </div>
-            <div class="col-md-6">
-              <label for="validationDefault02" class="form-label">Direccion de Email</label>
-              <input type="text" class="form-control" id="emailInput" required>
+            <div class="col-md-6 field">
+              <label for="email" class="form-label">Direccion de Email</label>
+              <input type="text" class="form-control" id="emailInput" name="email"  required>
             </div>
-            <div class="col-md-4">
-              <label for="validationDefault05" class="form-label">Telefono</label>
-              <input type="text" class="form-control" id="telefonoInput" required>
+            <div class="col-md-4 field">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="telefonoInput" name="telefono" required>
             </div>
-            <div class="col-md-4">
-              <label for="validationDefault05" class="form-label">Pais</label>
-              <input type="text" class="form-control" id="paisInput" required>
+            <div class="col-md-4 field">
+              <label for="pais" class="form-label">Pais</label>
+              <input type="text" class="form-control" id="paisInput" name="pais" required>
             </div>
-            <div class="col-12">
+            <div class="col-12 field">
               <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensajeInput" rows="3"></textarea>
+              <textarea class="form-control" id="mensajeInput" rows="3" name="mensaje"></textarea>
             </div>
             
-            <div class="col-12">
-              <button class="btn btn-primary" id="btnEnviar" type="submit">Enviar mensaje</button>
+            <div class="col-12 field">
+              <!--<button class="btn btn-primary" id="btnEnviar" type="submit">Enviar mensaje</button>-->
+              <input class="btn btn-primary" type="submit" id="btnEnviar" value="Enviar Mensaje" >
             </div>
+
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          
+          <script type="text/javascript">
+            emailjs.init('70jymnHobuP3mruLT')
+          </script>
           </form>
         </div>
       </div>
@@ -103,6 +111,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="../js/contacto.js"></script>
+
+ 
 
 </body>
 
